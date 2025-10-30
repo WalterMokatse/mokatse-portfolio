@@ -47,10 +47,10 @@ const ProjectModal = ({ project, onClose }) => {
 
     return (
         <div className="fixed inset-0 bg-black/70 backdrop-blur-lg h-screen flex items-center justify-center px-4 py-8 z-50 animate-fade-in">
-            <div className="bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-hidden w-full max-w-7xl animate-scale-in">
+            <div className="bg-white rounded-2xl shadow-2xl max-h-[90vh] overflow-hidden w-full animate-scale-in">
 
                 {/* Header */}
-                <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-gradient-to-r from-gray-50 to-white">
+                <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-linear-to-r from-gray-50 to-white">
                     <div>
                         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">{project.title}</h2>
                         <p className="text-gray-600 mt-1 flex items-center gap-2">
@@ -68,7 +68,7 @@ const ProjectModal = ({ project, onClose }) => {
 
                 <div className="overflow-y-auto max-h-[calc(90vh-80px)]">
                     <div className="p-6 md:p-8">
-                        <div className="grid lg:grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
                             {/* Image Slideshow Section */}
                             <div className="space-y-4">
@@ -94,7 +94,7 @@ const ProjectModal = ({ project, onClose }) => {
                                 </div>
 
                                 {/* Main Image Container */}
-                                <div className="relative bg-gray-50 rounded-xl  border border-gray-200 group">
+                                <div className="relative overflow-x-scroll bg-gray-50 rounded-xl  border border-gray-200 group">
                                     <img
                                         src={project.screenshots[currentIndex]}
                                         alt={`${project.title} screenshot ${currentIndex + 1}`}
@@ -132,12 +132,12 @@ const ProjectModal = ({ project, onClose }) => {
                                 </div>
 
                                 {/* Thumbnail Strip */}
-                                <div className="flex gap-3 w-100 lg:w-full overflow-x-auto pb-2">
+                                <div className="flex gap-3 overflow-x-scroll pb-2">
                                     {project.screenshots.map((image, index) => (
                                         <button
                                             key={index}
                                             onClick={() => goToSlide(index)}
-                                            className={`flex-shrink-0 w-20 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${index === currentIndex
+                                            className={`shrink-0 w-20 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${index === currentIndex
                                                 ? 'border-blue-500 ring-2 ring-blue-200'
                                                 : 'border-gray-200 hover:border-gray-300'
                                                 }`}
