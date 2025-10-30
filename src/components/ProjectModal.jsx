@@ -88,7 +88,7 @@ const ProjectModal = ({ project, onClose }) => {
                                                 : 'bg-gray-100 text-gray-600'
                                                 }`}
                                         >
-                                            {isAutoPlaying ? <Pause/> : <Play/>}
+                                            {isAutoPlaying ? <Pause /> : <Play />}
                                         </button>
                                     </div>
                                 </div>
@@ -98,6 +98,7 @@ const ProjectModal = ({ project, onClose }) => {
                                     <img
                                         src={project.screenshots[currentIndex]}
                                         alt={`${project.title} screenshot ${currentIndex + 1}`}
+                                        loading="lazy"
                                         className="w-full h-64 md:h-80 object-contain transition-transform duration-700 ease-out"
                                     />
 
@@ -144,6 +145,7 @@ const ProjectModal = ({ project, onClose }) => {
                                         >
                                             <img
                                                 src={image}
+                                                loading="lazy"
                                                 alt={`Thumbnail ${index + 1}`}
                                                 className="w-full h-full object-cover"
                                             />

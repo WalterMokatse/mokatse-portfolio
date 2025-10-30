@@ -81,6 +81,7 @@ const About = () => {
                 <img
                   className="rounded-full mx-auto border-2  border-red-300 size-96 md:w-100 md:h-auto object-contain"
                   src="/imgs/ME.png"
+                  loading="lazy"
                   alt="Karabo Mokatse - Full Stack Developer"
                 />
               </div>
@@ -95,7 +96,7 @@ const About = () => {
         <div className='flex justify-evenly md:justify-around space-y-4 items-center flex-wrap w-full'>
           {techSkills.map((tech) => (
             <div className='space-y-4' key={tech.name}>
-              <img className='animate-wiggle size-20' src={tech.imageSrc} />
+              <img className='animate-wiggle size-20' loading="lazy" src={tech.imageSrc} />
               <span
                 className="block mx-auto w-fit  px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 shadow-sm hover:shadow-md transition-all duration-300 hover:scale-105 hover:border-red-300"
               >
