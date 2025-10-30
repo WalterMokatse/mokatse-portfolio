@@ -27,7 +27,7 @@ const About = () => {
           <div className="space-y-8 order-2 lg:order-1">
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              <div className="hidden lg:flex items-center gap-3">
                 <div className="w-12 h-0.5 bg-red-500"></div>
                 <span className="font-semibold tracking-wider text-black text-sm uppercase">
                   Get To Know Me
@@ -71,6 +71,12 @@ const About = () => {
             {/* Main Image Container */}
             <div className="relative">
               {/* Main Image */}
+              <div className="lg:hidden flex items-center gap-3 mb-3">
+                <div className="w-12 h-0.5 bg-red-500"></div>
+                <span className="font-semibold tracking-wider text-black text-sm uppercase">
+                  Get To Know Me
+                </span>
+              </div>
               <div className="relative h-auto mx-auto rounded-full  bg-linear-to-br p-1 ">
                 <img
                   className="rounded-full mx-auto border-2  border-red-300 size-96 md:w-100 md:h-auto object-contain"
