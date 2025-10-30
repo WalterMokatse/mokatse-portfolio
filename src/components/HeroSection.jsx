@@ -11,7 +11,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-center bg-cover bg-fixed py-24 md:py-0"
+    <div className=" relative min-h-screen flex items-center justify-center px-4 md:px-12 bg-center bg-cover bg-fixed py-24 md:py-0"
       style={{
         backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(/imgs/hero-image.avif)'
       }}>
@@ -66,7 +66,7 @@ const HeroSection = () => {
 
         {/* Description */}
         <p className="text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-8 opacity-0 animate-fade-in-delayed-2 max-w-3xl mx-auto  md:text-center ">
-          I create <span className="text-red-500 font-semibold">digital experince</span> that blend
+          I create <span className="text-red-500 font-semibold">digital experiences</span> that blend
           beautiful design with <span className="text-red-500 font-semibold">cutting-edge technology</span>.
           Excited about building solutions that make a difference.
         </p>
