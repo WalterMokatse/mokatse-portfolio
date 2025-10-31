@@ -98,7 +98,7 @@ const ProjectModal = ({ project, onClose }) => {
                                     <img
                                         src={project.screenshots[currentIndex]}
                                         alt={`${project.title} screenshot ${currentIndex + 1}`}
-                                        loading="lazy"
+                                        loading="eager"
                                         className="w-full h-64 md:h-80 object-contain transition-transform duration-700 ease-out"
                                     />
 
