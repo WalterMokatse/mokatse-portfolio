@@ -145,7 +145,7 @@ const ProjectModal = ({ project, onClose }) => {
                                         >
                                             <img
                                                 src={image}
-                                                loading="lazy"
+                                                loading="eager"
                                                 alt={`Thumbnail ${index + 1}`}
                                                 className="w-full h-full object-cover"
                                             />
