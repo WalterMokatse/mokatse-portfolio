@@ -33,7 +33,7 @@ const Projects = () => {
       liveUrl: "",
       githubUrl: "https://github.com/WalterMokatse/C-reer_Connect",
       videoUrl:"",
-      screenshots: ['/screenshots/job1.png', '/screenshots/job2.png', '/screenshots/job3.png', '/screenshots/job5.png', '/screenshots/job4.png'],
+      screenshots: ['/screenshots/job1.png', '/screenshots/job6.png','/screenshots/job7.png','/screenshots/job9.png','/screenshots/job2.png','/screenshots/job8.png', '/screenshots/job3.png','/screenshots/job11.png','/screenshots/job10.png' ,'/screenshots/job5.png', '/screenshots/job4.png'],
       completed: 2025
     },
     {
